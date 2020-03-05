@@ -1,9 +1,103 @@
-html {
-  box-sizing: border-box;
+@import 'global';
+@import 'vars';
+@import 'media';
+
+//*========= HEADER ==============
+
+.header {
+  background-image: url(../images/sweater-cover-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 760px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.header__box {
+  width: 100%;
+  background-color: rgba(225, 196, 170, 0.75);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header__inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 10px;
+}
+
+.header__menu {
+  width: 410px;
+  height: 21px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.header__search-cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__search {
+  cursor: pointer;
+}
+
+.header__cart {
+  margin-left: 19px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header__title {
+  color: $blue;
+}
+
+.header__title-box {
+  position: relative;
+  width: 100%;
+}
+
+.header__title-big {
+  font-size: 200px;
+  font-family: 'Skranji', cursive;
+  -webkit-text-stroke: 4px #ffffff;
+  position: absolute;
+  right: 17px;
+  top: 72px;
+}
+
+.header__title-little {
+  font-size: 96px;
+  font-family: 'Skranji', cursive;
+  -webkit-text-stroke: 3px #ffffff;
+  position: absolute;
+  right: 2px;
+  top: 245px;
+}
+
+.header__title-btn {
+  padding: 15px 57px;
+  font-size: 24px;
+  color: $blue;
+  border: solid 3px $blue;
+  background-color: rgba(225, 196, 170, 0.75);
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.66);
+  position: absolute;
+  right: 240px;
+  top: 370px;
 }
