@@ -20,7 +20,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .header__inner {
@@ -28,10 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header__logo {
-  margin-left: 10px;
+  padding: 0 100px;
 }
 
 .header__menu {
@@ -128,24 +125,23 @@
 }
 
 .catalog__inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  grid-column-gap: 100px;
+  grid-row-gap: 55px;
   padding-top: 55px;
-  padding-bottom: 60px;
+  padding-bottom: 112px;
+  // padding: 55px 96px 112px 96px;
 }
 
 .catalog__item {
-  width: 335px;
-  height: 350px;
-  position: relative;
-  margin-bottom: 55px;
+  display: block;
+  width: 100%;
+  height: 350PX;
+  object-fit: cover;
   overflow: hidden;
-
-  &:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
 }
 
 .catalog__image {
@@ -157,7 +153,7 @@
   transition: .5s ease-in-out;
 
   &:hover {
-    width: 350px;
+    transform: scale(1.15);
   }
 }
 
@@ -220,7 +216,6 @@
   }
 }
 
-
 .slider__inner .slick-track {
   transform: rotate3d(0px, 0px, 0px) !important;
 }
@@ -235,4 +230,49 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.slick-dots {
+  li {
+    margin: 0 11px;
+    width: auto;
+    height: auto;
+
+    button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: solid 3px #000000;
+    }
+  }
+}
+
+.slick-dots li.slick-active button {
+  background-color: #000000;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.slick-prev {
+  top: 280px;
+  left: 530px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.slick-next {
+  top: 280px;
+  right: 562px;
+  opacity: .7;
+  z-index: 1;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  opacity: 1;
+  transition: all .5s;
 }

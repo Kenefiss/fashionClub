@@ -27,7 +27,8 @@ gulp.task('sass', function () {
 gulp.task('style', function () {
   return gulp.src([
       'node_modules/normalize.css/normalize.css',
-      'node_modules/slick-carousel/slick/slick.css'
+      'node_modules/slick-carousel/slick/slick.css',
+      'node_modules/slick-carousel/slick/slick-theme.css'
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
