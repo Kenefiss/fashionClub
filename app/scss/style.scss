@@ -16,6 +16,10 @@
 .header__box {
   width: 100%;
   background-color: rgba(225, 196, 170, 0.75);
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24), 0px 1px 6.86px 0.14px rgba(0, 0, 0, 0.16);
+
 }
 
 .container {
@@ -29,6 +33,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
+  transition: all 1s;
+}
+
+.small {
+  height: 6vh;
 }
 
 .header__menu {
@@ -209,7 +218,6 @@
 
 .slider__inner {
   width: 100%;
-  margin-bottom: 140px;
 
   div+div {
     margin-left: 22px;
@@ -275,4 +283,200 @@
 .slick-prev:hover {
   opacity: 1;
   transition: all .5s;
+}
+
+//*============== Brand ===============
+
+.brand__inner {
+  margin-top: 140px;
+  display: flex;
+}
+
+.brand__image {
+  width: 570px;
+  height: 570px;
+  padding-bottom: 110px;
+  margin-left: 100px;
+  margin-right: 82px;
+
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+}
+
+.brand__desc {
+  max-width: 580px;
+  margin-right: 72px;
+}
+
+.brand__desc-title {
+  font-family: 'Skranji', cursive;
+  -webkit-text-stroke: 3px #ffffff;
+  color: #1857a1;
+  font-size: 72px;
+  position: relative;
+  top: 30px;
+  left: -166px;
+}
+
+.brand__desc-text {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 65px;
+}
+
+.brand__desc-video {
+  background-image: url(../images/video-img.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 180px;
+  margin-bottom: 72px;
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+.fa-play-circle {
+  color: #000;
+  font-size: 85px;
+}
+
+.brand__box {
+  margin: 0 auto;
+}
+
+
+//*============== Contacts ===============
+
+.contacts {
+  height: 350px;
+  background: linear-gradient(#d39d7c 0%, #2d1306 100%);
+}
+
+.contacts__inner {
+  position: relative;
+}
+
+.contacts__title {
+  font-size: 144px;
+  color: #ffffff;
+  -webkit-text-stroke: 4px #1857a1;
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  top: -60px;
+}
+
+.contacts__subtitle {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.contacts__form {
+  margin: 0 auto;
+  width: 620px;
+  padding: 0;
+}
+
+.contacts__mail {
+  margin-bottom: 45px;
+  font-family: 'Roboto Slab', serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  width: 435px;
+  height: 54px;
+  border: 3px solid #1857a1;
+  background-color: rgba(196, 196, 196, 0.5);
+  padding-left: 45px;
+}
+
+.contacts__btn {
+  margin-left: 34px;
+  padding: 11px 42px;
+  font-family: 'Roboto Slab', serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  border: 3px solid #1857a1;
+  background-color: #ddc5af;
+  cursor: pointer;
+
+  &:hover {
+    color: #ddc5af;
+    border: 3px solid #ddc5af;
+    background-color: #1857a1;
+  }
+}
+
+.contacts__checkbox {
+  margin-right: 24px;
+}
+
+//*============== Contacts ===============
+
+footer {
+  background-color: #210f06;
+  height: 235px;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 110px;
+  margin-bottom: 20px;
+}
+
+.footer__logo {}
+
+.list__items {
+  display: flex;
+
+  li+li {
+    margin-left: 23px;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.footer__address {
+  color: #fff;
+}
+
+.footer__address-adr {
+  span {
+    padding-left: 30px;
+  }
+}
+
+.footer__address-tel {
+  margin-top: 10px;
+
+  a {
+    padding-left: 50px;
+    color: #fff;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+
+  li+li {
+    margin-left: 35px;
+  }
+}
+
+.list__item {
+  a {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
 }

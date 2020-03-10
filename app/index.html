@@ -7,28 +7,31 @@
   <title>Fashion Club</title>
   <link href="https://fonts.googleapis.com/css?family=Skranji&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <!-------- Header ---------->
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__box">
       <div class="container">
-        <div class="header__inner">
+        <div class="header__inner" id="header-sroll">
 
           <div class="header__logo">
-            <a href="#"><img src="images/logo.png" alt="Logo fashion club"></a>
+            <a href="#home"><img src="images/logo.png" alt="Logo fashion club"></a>
           </div>
 
           <nav class="header__menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Сatalog</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Brand</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#catalog">Сatalog</a></li>
+              <li><a href="#new">New</a></li>
+              <li><a href="#brand">Brand</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
 
@@ -61,7 +64,7 @@
   <section class="background__img">
 
     <!-------- Catalog ---------->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container">
         <div class="catalog__inner">
 
@@ -101,7 +104,7 @@
     </section>
 
     <!-------- Slider ---------->
-    <section class="slider">
+    <section class="slider" id="new">
       <div class="container">
         <div class="slider__title">
           exclusive clothing
@@ -147,8 +150,118 @@
       </div>
     </section>
 
+    <!-------- Brand ---------->
+    <section class="brand" id="brand">
+      <div class="container">
+        <div class="brand__inner">
+
+          <div class="brand__image">
+            <img src="images/brand-img.jpg" alt="">
+          </div>
+          <div class="brand__desc">
+            <div class="brand__desc-title">OUR Brand</div>
+            <div class="brand__desc-text">
+              Discover 2019’s latest clothing trends from fashion's top designers—and see how your favorite celebrities
+              are
+              wearing and pairing their perfectly chosen mix of trendy and classic clothes. Get on fashion's
+              cutting-edge
+              right now with our editors' picks for trendy outfit ideas and shop our curation of celebrity-approved
+              dresses,
+              jeans, shirts, skirts, sweaters and jackets that will become your own wardrobe staples.
+            </div>
+            <div class="brand__box">
+              <a class="brand__desc-video" data-fancybox
+                href="https://www.youtube.com/watch?time_continue=26&v=Pbv8b0VcB0Y&feature=emb_logo">
+                <i class="far fa-play-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
 
   </section>
+
+  <!-------- Contacts ---------->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+
+        <div class="contacts__title">
+          Get In Touch
+        </div>
+        <div class="contacts__subtitle">
+          Create an account and get a FREE discount CARD
+        </div>
+        <div class="contacts__form">
+          <input class="contacts__mail" type="email" name="" id="" placeholder="Your E-mail">
+          <button class="contacts__btn">Send</button>
+          <input class="contacts__checkbox" type="checkbox" name="check" id="">
+          <label for="check">I want to get latest news</label>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-------- Footer ---------->
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__box">
+          <div class="footer__logo">
+            <a href="#home"><img src="images/logo-2.svg" alt="Logo fashion club"></a>
+          </div>
+
+          <div class="footer__catalog">
+            <ul class="list__items">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Family look</a></li>
+              <li><a href="#">Girl</a></li>
+              <li><a href="#">Boy</a></li>
+              <li><a href="#">Baby</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__address">
+            <div class="footer__address-adr">Adress <span>Lviv, str. Franko</span></div>
+            <div class="footer__address-tel"  >Tel. <a href="tel:380975555888">+380975555888</a></div>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <ul class="social__list">
+            <li class="list__item">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#">
+                <img src="images/instagram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
