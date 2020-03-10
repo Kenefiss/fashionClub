@@ -1,5 +1,4 @@
 @import 'global';
-@import 'vars';
 @import 'media';
 
 //*========= HEADER ==============
@@ -52,32 +51,39 @@
     a {
       color: #000;
 
-      &::hover {
-        color: $blue;
+      &:hover {
+        color: #1857a1;
       }
     }
-
   }
-
 }
 
 .header__search-cart {
   display: flex;
   justify-content: space-between;
+  font-size: 30px;
 }
 
 .header__search {
   cursor: pointer;
+
+  &:hover {
+    color: #1857a1;
+  }
 }
 
 .header__cart {
   margin-left: 19px;
   cursor: pointer;
   margin-right: 10px;
+
+  &:hover {
+    color: #1857a1;
+  }
 }
 
 .header__title {
-  color: $blue;
+  color: #1857a1;
 }
 
 .header__title-box {
@@ -106,8 +112,8 @@
 .header__title-btn {
   padding: 15px 57px;
   font-size: 24px;
-  color: $blue;
-  border: solid 3px $blue;
+  color: #1857a1;
+  border: solid 3px #1857a1;
   background-color: rgba(225, 196, 170, 0.75);
   box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.66);
   position: absolute;
@@ -118,9 +124,8 @@
   &:hover {
     color: #fff;
     border: solid 3px #fff;
-    background-color: $blue;
+    background-color: #1857a1;
     box-shadow: none;
-
   }
 }
 
@@ -140,13 +145,12 @@
   grid-row-gap: 55px;
   padding-top: 55px;
   padding-bottom: 112px;
-  // padding: 55px 96px 112px 96px;
 }
 
 .catalog__item {
   display: block;
   width: 100%;
-  height: 350PX;
+  height: 350px;
   object-fit: cover;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -304,7 +308,6 @@
     background-repeat: no-repeat;
     width: 100%;
   }
-
 }
 
 .brand__desc {
@@ -347,7 +350,6 @@
 .brand__box {
   margin: 0 auto;
 }
-
 
 //*============== Contacts ===============
 
@@ -431,8 +433,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer__logo {}
-
 .list__items {
   display: flex;
 
@@ -442,6 +442,10 @@ footer {
 
   a {
     color: #fff;
+
+    &:hover {
+      color: #1857a1;
+    }
   }
 }
 
@@ -459,8 +463,12 @@ footer {
   margin-top: 10px;
 
   a {
-    padding-left: 50px;
+    margin-left: 50px;
     color: #fff;
+
+    &:hover {
+      color: #1857a1;
+    }
   }
 }
 
@@ -478,5 +486,18 @@ footer {
   a {
     color: transparent;
     -webkit-text-stroke: 1px #fff;
+
+    &:hover {
+      -webkit-text-stroke: 1px #1857a1;
+    }
+
+    .fa-instagram {
+      color: #fff;
+      -webkit-text-stroke: 0px;
+
+      &:hover {
+        color: #1857a1;
+      }
+    }
   }
 }
