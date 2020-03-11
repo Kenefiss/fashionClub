@@ -20,6 +20,8 @@ $(function () {
     }
   });
 
+  new WOW().init();
+
 
 
 
