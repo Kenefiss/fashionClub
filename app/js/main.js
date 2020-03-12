@@ -22,6 +22,15 @@ $(function () {
 
   new WOW().init();
 
+  $('.header__menu-btn').on('click', function () {
+    $('.header__menu ul').slideToggle(1112);
+  });
+  $(window).resize(function () {
+    if ($(window).width() > 1112) {
+      $('.header__menu ul').removeAttr('style');
+    }
+  });
+
 
 
 
