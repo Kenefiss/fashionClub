@@ -11,6 +11,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  min-width: 320px;
 }
 
 .header__box {
@@ -241,10 +242,10 @@
 }
 
 .slider__inner {
-  width: 100%;
+  max-width: 100%;
 
   div+div {
-    margin-left: 22px;
+    margin-left: 20px;
   }
 }
 
@@ -252,12 +253,8 @@
   transform: rotate3d(0px, 0px, 0px) !important;
 }
 
-.slider__inner .slick-slide {
-  max-width: 262px;
-}
-
 .slider__image {
-  width: 262px;
+  width: 100%;
   height: 262px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -290,15 +287,17 @@
 }
 
 .slick-prev {
+  position: absolute;
   top: 280px;
-  left: 530px;
+  left: 35%;
   z-index: 1;
   opacity: 0.7;
 }
 
 .slick-next {
+  position: absolute;
   top: 280px;
-  right: 562px;
+  right: 38%;
   opacity: .7;
   z-index: 1;
 }
@@ -317,8 +316,7 @@
 }
 
 .brand__image {
-  width: 570px;
-  height: 570px;
+  width: 100%;
   padding-bottom: 110px;
   margin-left: 100px;
   margin-right: 82px;
@@ -374,7 +372,6 @@
 //*============== Contacts ===============
 
 .contacts {
-  height: 350px;
   background: linear-gradient(#d39d7c 0%, #2d1306 100%);
 }
 
@@ -389,6 +386,7 @@
   font-family: 'Roboto Slab', serif;
   position: absolute;
   top: -60px;
+  transition: all .5s;
 }
 
 .contacts__subtitle {
@@ -401,8 +399,8 @@
 
 .contacts__form {
   margin: 0 auto;
-  width: 620px;
-  padding: 0;
+  max-width: 620px;
+  padding-bottom: 50px;
 }
 
 .contacts__mail {
@@ -427,7 +425,7 @@
   background-color: #ddc5af;
   cursor: pointer;
 
-  a &:hover {
+  &:hover {
     color: #ddc5af;
     border: 3px solid #ddc5af;
     background-color: #1857a1;
