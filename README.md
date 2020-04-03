@@ -1,1 +1,1 @@
-https://kenefiss.github.io/fashion-club/. 
+https://condescending-shaw-f4a678.netlify.com
